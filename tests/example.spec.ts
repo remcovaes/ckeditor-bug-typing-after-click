@@ -8,7 +8,8 @@ test('test', async ({ page }) => {
   
   await page.getByRole('textbox', { name: 'Editor editing area: main' }).getByRole('paragraph').click();
   
-  await new Promise(res => setTimeout(res, 500));
+  // Uncomment this line to make the test pass
+  // await new Promise(res => setTimeout(res, 500));
   
   await page.keyboard.type('test');
   
